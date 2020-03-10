@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<form action="" method="POST">
+		<div>
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" id="nome" placeholder="Digite seu nome" value="Janaína">
+		</div>
+		<div>
+			<label for="senha">Senha</label>
+			<input type="password" name="senha" id="senha" placeholder="Digite sua senha" value="">
+		</div>
+		<div>
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email" placeholder="Digite seu email" required>
+		</div>
+
+		<div>
+			<input type="checkbox" name="aceite" id="aceite" value="aceitou">
+			<label for="aceite">
+				Li e aceito os <a href="#">termos de uso</a></label>
+		</div>
+
+		<div>
+			<label for="generoM">Masculino</label>
+			<input type="radio" id="generoM" name="genero" value="M">
+
+			<label>
+				Feminino
+				<input type="radio" id="generoF" name="genero" value="F">
+			</label>
+
+		</div>
+
+		<div>
+			<label for="mensagem">Mensagem</label>
+			<textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+		</div>
+		<div>
+			<label for="pais">País</label>
+			<select name="pais" id="pais">
+				<optgroup label="América Latina">
+					<option value="br">Brasil</option>
+					<option value="ar">Argentina</option>
+				</optgroup>
+				<optgroup label="Europa">
+					<option value="es">Espanha</option>
+					<option value="pt">Portugal</option>
+				</optgroup>
+			</select>
+		</div>
+		<div>
+			<select name="hobbies" id="hobbies" multiple>
+				<option value="0">Dança</option>
+				<option value="1">Programação</option>
+				<option value="2">Inteligência Artificial</option>
+				<option value="3">Redes Neurais</option>
+				<option value="4">Cálculo diferencial</option>
+				<option value="5">Teoria dos Conjuntos</option>
+			</select>
+		</div>
+		<input type="hidden" name="infoEscondida" value="sim">
+		<div>
+			<label for="foto">
+				<input size="1" maxlength="" type="file" name="foto" id="foto" accept=".jpg,.jpeg,.png">
+			</label>
+		</div>
+		<!-- <button type="submit">Enviar</button> -->
+		<input type="submit" name="botao" value="Enviar">
+	</form>
+</body>
+
+</html>
